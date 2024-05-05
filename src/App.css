@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aapHeader {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 2px #00000033;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 5%, rgba(83, 186, 143, 0.5243347338935574) 77%, rgba(70, 252, 100, 0.4599964985994398) 93%);
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.shopingCartIcon {
+    font-size: 30px;
+    margin-right: 16px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.PageContent {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 2px;
+
+}
+
+.aapFooter {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.itemCardImg {
+    height: 150px !important;
+    object-fit: scale-down;
+}
+
+
+.itemCard,
+.itemCardBadge {
+    margin: 8px;
+}
+
+
+.example {
+    position:fixed;
+    top: 80px;
+    left: 550px;
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
